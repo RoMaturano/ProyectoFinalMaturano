@@ -1,0 +1,27 @@
+{% extends "AppMaturano/padre.html" %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+    <h3> Compradores de M&co</h3> 
+    <ul>
+
+        {% for comprador in object_list %}
+            <p>{{comprador.nombre}}</p>
+             <p>
+                <a href= "{%url 'Detailcomprador' comprador.id%}">  Ver </a>
+                <a href= "{%url 'Editcomprador' comprador.id%}">  Editar </a>
+                <a href= "{%url 'Deletecomprador' comprador.id%}"  > Borrar </a>
+                <br><br>
+             </p>
+
+             
+
+        {%endfor%}
+            
+    </ul>
+    <a class="btn btn-primary" href="{% url 'Newcomprador' %}">Nuevo comprador</a>
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+{% block contenidoQueCambia%}
+
+<form action="/AppMaturano/buscarV/" method = "get"> {% csrf_token %}
+    <a> Busqueda de ventas: </a> <br>
+    <a> Ingrese la fecha de la venta </a> <br><br>
+    <input type= "text" name="fecha_de_venta" id="fecha_de_venta">
+    <input type= "submit", value = "Buscar">
+</form>
+
+
+{% endblock %}

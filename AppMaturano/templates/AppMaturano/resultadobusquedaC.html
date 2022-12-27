@@ -1,0 +1,30 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+<p> Estamos buscando el comprador: {{comprador}}</p>
+
+<ul>
+    Nombre: {{nombre}}
+    <br>
+    Direccion: 
+    {%for dire in direccion %}
+
+    {{dire.direccion}}
+
+    
+    {%endfor%}
+    <br>
+
+    Email:
+    <br>
+    {%for dire in nombre%}
+
+    {{dire.email}}
+
+    {%endfor%}
+</ul>
+
+{% endblock %}

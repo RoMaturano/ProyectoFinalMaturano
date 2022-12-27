@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      {%load static%}
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>App Maturano</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link href="{%static "AppMaturano/css/style.css"%}" rel="stylesheet"/>
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+
+     
+      
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header-top">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                    
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                           <div class="limit-box">
+                              <nav class="main-menu">
+                                 <ul class="menu-area-main">
+                                    
+                                    <li class="active" > <a href="/AppMaturano/">Inicio</a> </li>
+                                    <li class="active" > <a href="/AppMaturano/producto/list/">Productos</a> </li>
+                                    <li class="active" > <a href="/AppMaturano/comprador/list/">Compradores</a> </li>
+                                    <li class="active" > <a href="/AppMaturano/ventas/list/">Ventas</a> </li><br>
+                                    <li> <a href="#contact">Contacto</a> </li>
+                                    <li> <a href="/AppMaturano/carrito/">Ingreso de Productos</a> </li>
+                                    <li> <a href="/AppMaturano/busquedaProducto/">Busqueda de Productos</a> </li><br>
+                                    <li> <a href="/AppMaturano/comprador/">Ingreso de Compradores</a> </li>
+                                    <li> <a href="/AppMaturano/busquedaCompradores/">Busqueda de Compradores</a> </li><br>
+                                    <li> <a href="/AppMaturano/ventas/">Ingreso de Ventas</a> </li>
+                                    <li> <a href="/AppMaturano/busquedaVentas/">Busqueda de Ventas</a> </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+               <div class="banner_main">
+                  <div class="container">
+                     <div class="row d_flex">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
+                           <div class="text-bg">
+                              <h1>Indumentaria MIA&co</h1>
+                              <span style ="text-align:center">tu compañia desde siempre <br> 
+                              
+                             
+                           </div>
+                        </div>
+                        <br>
+                        
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="text-img">
+                              <figure><img src="https://blog.retif.es/wp-content/uploads/blog_retif_2-1.jpg" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         
+         </section>
+         
+         </div>
+      </header>
+      {% block contenidoQueCambia %}
+      {% endblock %}
+      
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                 
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      <!-- end contact -->
+      
+       
+
+
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="col-md-6" style ="text-align:center" >
+                        <h1><b>Se vos misma :) </b></h1>
+                        <span><b>Estamos con vos desde 2019</b></span>
+                     </div>
+                  </div>
+                  <div class="col-md-6" style ="text-align:center" >
+                     
+                        <h1><b>Contacto</b></h1>
+                        <span ><b>(+54)0800111111</b></span>
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <p>© 2019 DERECHOS RESERVADOS. <a href="https://html.design/"></a></p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    
+   </body>
+</html>

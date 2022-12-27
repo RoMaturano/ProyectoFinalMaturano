@@ -1,0 +1,28 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+<p> Estamos buscando el producto: {{producto}}</p>
+
+<ul>
+    nombre: {{nombre}}
+    <br>
+    precio: 
+    {%for precios in precio%}
+
+    {{precios.precio}}
+    <br>
+    {%endfor%}
+
+    Fecha de ingreso:
+    <br>
+    {%for precios in precio%}
+
+    {{precios.fecha_de_ingreso}}
+
+    {%endfor%}
+</ul>
+
+{% endblock %}

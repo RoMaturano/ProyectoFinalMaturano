@@ -1,0 +1,13 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+  Nombre: {{ventas.cantidad_ventas}}
+  Monto Total: {{ventas.monto_recaudado}}
+  Fecha: {{ventas.fecha_de_venta}}
+
+  <a href = "{%url 'Listaventa'%}"> Regresar </a>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+<p> Estamos buscando la venta: {{ventas}}</p>
+
+<ul>
+    Fecha: {{fecha_de_venta}}
+    <br>
+    Monto: 
+    {%for monto in monto_recaudado%}
+
+    {{monto.monto_recaudado}}
+    <br>
+    {%endfor%}
+
+    Cantidad de transacciones:
+    <br>
+    {%for monto in monto_recaudado%}
+
+    {{monto.cantidad_ventas}}
+
+    {%endfor%}
+</ul>
+
+{% endblock %}

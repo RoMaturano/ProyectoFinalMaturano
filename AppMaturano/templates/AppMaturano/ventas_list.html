@@ -1,0 +1,27 @@
+{% extends "AppMaturano/padre.html" %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+    <h3> Ventas M&co</h3> 
+    <ul>
+
+        {% for ventas in object_list %}
+            <p>{{ventas.fecha_de_venta}}</p>
+             <p>
+                <a href= "{%url 'Detailventa' ventas.id%}">  Ver </a>
+                <a href= "{%url 'Editventa' ventas.id%}">  Editar </a>
+                <a href= "{%url 'Deleteventa' ventas.id%}"  > Borrar </a>
+                <br><br>
+             </p>
+
+             
+
+        {%endfor%}
+            
+    </ul>
+    <a class="btn btn-primary" href="{% url 'Newventa' %}">Nuevas ventas</a>
+
+
+{% endblock %}

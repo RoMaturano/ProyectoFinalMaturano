@@ -1,0 +1,26 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+{% block contenidoQueCambia%}
+
+    <h1> Ingreso de las Ventas</h1>
+    <p> informacion de las ventas diarias</p>
+    <br>
+
+    <P>
+       Aqui podras ingresar los datos del las ventas diarias <br> para tener un registro.
+    </p>
+    <br>
+
+    Ingresar la venta diaria:
+    <br>
+    <form action="" method = "post"> {% csrf_token %}
+        <table>
+            {{miFormulariovendedor.as_table}}
+        </table>
+        <input type= "submit", value = "Enviar">
+    </form>
+
+
+
+{% endblock %}

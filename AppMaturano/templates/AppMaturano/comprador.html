@@ -1,0 +1,27 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+{% block contenidoQueCambia%}
+
+    <h1> Ingreso de compradores</h1>
+    <p> informacion de los compradores</p>
+    <br>
+
+    <P>
+       Aqui podras ingresar los datos del los compradores <br> para tener un listado.
+    </p>
+    <br>
+
+    Ingresar un comprador:
+    <br>
+    <form action="" method = "post"> {% csrf_token %}
+        <table>
+            {{miFormulariocomprador.as_table}}
+        </table>
+        <input type= "submit", value = "Enviar">
+    </form>
+
+   
+
+
+{% endblock %}

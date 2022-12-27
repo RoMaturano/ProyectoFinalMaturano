@@ -1,0 +1,25 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+{% block contenidoQueCambia%}
+
+    <h1> Ingreso de productos</h1>
+    <p> info de stock de productos</p>
+    <br>
+
+    <P>
+       Aqui podras ingresar los datos del remito <br> para ingresar todos los productos.
+    </p>
+    <br>
+
+    Ingresar un producto:
+    <br>
+    <form action="" method = "post"> {% csrf_token %}
+        <table>
+            {{miFormulario.as_table}}
+        </table>
+        <input type= "submit", value = "Enviar">
+    </form>
+
+
+{% endblock %}

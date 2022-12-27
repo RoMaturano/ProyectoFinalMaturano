@@ -1,0 +1,13 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+
+{% block contenidoQueCambia%}
+
+  Nombre: {{comprador.nombre}}
+  Direccion: {{comprador.direccion}}
+  Email: {{comprador.email}}
+
+  <a href = "{%url 'Listacomprador'%}"> Regresar </a>
+
+{% endblock %}
